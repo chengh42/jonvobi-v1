@@ -6,13 +6,21 @@ import photo from "./img/photo.webp";
 import stoel from "./img/stoel.webp";
 import "./App.css";
 import {useEffect, useState} from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useNavigate,
+} from "react-router-dom";
+import Books from "./Books";
 
-function App() {
+function Home() {
   const [mousePosition, setMousePosition] = useState({x: 0, y: 0});
   const [hoveredImage, setHoveredImage] = useState<string | null>(null);
   const [randomRotations, setRandomRotations] = useState<
     Record<string, number>
   >({});
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -50,6 +58,10 @@ function App() {
     return `${baseTransform} ${mouseMovement}${hoverTransform}`;
   };
 
+  const handleBookshelfClick = () => {
+    navigate("/books");
+  };
+
   return (
     <div className="App">
       <div className="scattered-container">
@@ -72,6 +84,7 @@ function App() {
           }}
           onMouseEnter={() => setHoveredImage("bookshelf")}
           onMouseLeave={() => setHoveredImage(null)}
+          onClick={handleBookshelfClick}
         />
         <img
           src={chair}
@@ -115,6 +128,17 @@ function App() {
         />
       </div>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/books" element={<Books />} />
+      </Routes>
+    </Router>
   );
 }
 
