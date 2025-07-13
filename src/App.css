@@ -1,0 +1,136 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #c3d5fb;
+  position: relative;
+}
+
+.scattered-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.scattered-image {
+  position: absolute;
+  object-fit: contain;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  filter: none;
+}
+
+/* Individual image positioning and sizing */
+.book {
+  top: 15%;
+  left: 60%;
+  height: 250px;
+}
+
+.bookshelf {
+  top: 15%;
+  left: 40%;
+  width: 380px;
+}
+
+.chair {
+  bottom: 30%;
+  left: 25%;
+  height: 420px;
+}
+
+.person {
+  bottom: 20%;
+  right: 45%;
+  height: 580px;
+}
+
+.photo {
+  top: 10%;
+  left: 30%;
+  height: 210px;
+}
+
+.stoel {
+  bottom: 25%;
+  right: 30%;
+  width: 290px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .book,
+  .bookshelf,
+  .chair,
+  .person,
+  .photo,
+  .stoel {
+    width: 120px;
+    height: 90px;
+  }
+
+  .book {
+    top: 5%;
+    left: 10%;
+  }
+  .bookshelf {
+    top: 20%;
+    right: 15%;
+  }
+  .chair {
+    top: 25%;
+    right: 5%;
+  }
+  .person {
+    bottom: 15%;
+    left: 20%;
+  }
+  .photo {
+    top: 10%;
+    left: 55%;
+  }
+  .stoel {
+    bottom: 35%;
+    right: 30%;
+  }
+}
+
+@media (max-width: 480px) {
+  .book,
+  .bookshelf,
+  .chair,
+  .person,
+  .photo,
+  .stoel {
+    width: 80px;
+    height: 60px;
+  }
+
+  .book {
+    top: 8%;
+    left: 8%;
+  }
+  .bookshelf {
+    top: 15%;
+    right: 12%;
+  }
+  .chair {
+    top: 20%;
+    right: 3%;
+  }
+  .person {
+    bottom: 12%;
+    left: 15%;
+  }
+  .photo {
+    top: 8%;
+    left: 50%;
+  }
+  .stoel {
+    bottom: 30%;
+    right: 25%;
+  }
+}
