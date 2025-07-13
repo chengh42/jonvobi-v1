@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jonvobi-v1/static/css/main.5221d49f.css",
-    "main.js": "/jonvobi-v1/static/js/main.5355895e.js",
+    "main.css": "/jonvobi-v1/static/css/main.6b91504f.css",
+    "main.js": "/jonvobi-v1/static/js/main.d802dd56.js",
     "static/js/453.ed11f0c2.chunk.js": "/jonvobi-v1/static/js/453.ed11f0c2.chunk.js",
     "static/media/person.webp": "/jonvobi-v1/static/media/person.bfd60cf2899563e20afb.webp",
     "static/media/chair.webp": "/jonvobi-v1/static/media/chair.49c7a9274d39aa6184ce.webp",
@@ -10,12 +10,12 @@
     "static/media/photo.webp": "/jonvobi-v1/static/media/photo.2fa10a0c0db93e07cdb8.webp",
     "static/media/book.webp": "/jonvobi-v1/static/media/book.32e5c397de8f988ce192.webp",
     "index.html": "/jonvobi-v1/index.html",
-    "main.5221d49f.css.map": "/jonvobi-v1/static/css/main.5221d49f.css.map",
-    "main.5355895e.js.map": "/jonvobi-v1/static/js/main.5355895e.js.map",
+    "main.6b91504f.css.map": "/jonvobi-v1/static/css/main.6b91504f.css.map",
+    "main.d802dd56.js.map": "/jonvobi-v1/static/js/main.d802dd56.js.map",
     "453.ed11f0c2.chunk.js.map": "/jonvobi-v1/static/js/453.ed11f0c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5221d49f.css",
-    "static/js/main.5355895e.js"
+    "static/css/main.6b91504f.css",
+    "static/js/main.d802dd56.js"
   ]
 }
