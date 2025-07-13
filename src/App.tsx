@@ -20,7 +20,20 @@ function Home() {
   const [randomRotations, setRandomRotations] = useState<
     Record<string, number>
   >({});
+  const [backgroundColor, setBackgroundColor] = useState("#c3d5fb");
   const navigate = useNavigate();
+
+  // Function to generate a random color shade
+  const generateRandomShade = () => {
+    const hue = Math.floor(Math.random() * 360); // Random hue (0-359)
+    const saturation = Math.floor(Math.random() * 30) + 20; // Saturation between 20-50%
+    const lightness = Math.floor(Math.random() * 30) + 60; // Lightness between 60-90%
+    return `hsl(${hue}, ${saturation}%, ${lightness}%)`;
+  };
+
+  const handlePhotoClick = () => {
+    setBackgroundColor(generateRandomShade());
+  };
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -63,7 +76,7 @@ function Home() {
   };
 
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor}}>
       <div className="scattered-container">
         <img
           src={book}
@@ -115,6 +128,7 @@ function Home() {
           }}
           onMouseEnter={() => setHoveredImage("photo")}
           onMouseLeave={() => setHoveredImage(null)}
+          onClick={handlePhotoClick}
         />
         <img
           src={stoel}

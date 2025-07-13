@@ -24,7 +24,7 @@
 }
 
 .scattered-image:hover {
-  filter: brightness(1.1) contrast(1.1);
+  filter: brightness(1.2) drop-shadow(0 4px 8px rgba(208, 6, 100, 0.3));
 }
 
 /* Individual image positioning and sizing */
@@ -39,10 +39,6 @@
   left: 40%;
   width: 380px;
   cursor: pointer;
-}
-
-.bookshelf:hover {
-  filter: brightness(1.2) drop-shadow(0 4px 8px rgba(208, 6, 100, 0.3));
 }
 
 .chair {
